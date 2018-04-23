@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env"],
+    ["es2015", {"modules": false}],
+    "react"
+  ],
+  "plugins": [
+    "transform-object-assign",
+    "transform-object-rest-spread",
+    "add-module-exports",
+    "styled-components"
+  ]
+}

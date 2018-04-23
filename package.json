@@ -1,0 +1,60 @@
+{
+  "name": "zoom-slide-bar",
+  "version": "1.0.0",
+  "description": "A react component which creates a slide bar has two slider boxes, can be used for zoomer bar in charts.",
+  "main": "dist/index.js",
+  "jsnest:main": "src/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist && webpack --colors --progress -p",
+    "dev": "webpack --watch --display-error-details",
+    "lint": "eslint src example/src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "component",
+    "react",
+    "react-component",
+    "slidebar"
+  ],
+  "author": "Xun Guo",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0",
+    "prop-types": ">=15.5.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.24.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^4.1.1",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-react-transform": "2.0.2",
+    "babel-plugin-styled-components": "^1.1.4",
+    "babel-plugin-transform-object-assign": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.3.2",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babel-register": "^6.8.0",
+    "eslint": "^1.3.1",
+    "eslint-config-airbnb": "^1.0.2",
+    "eslint-plugin-react": "^3.3.1",
+    "file-loader": "^1.1.11",
+    "react": ">=0.14.0",
+    "react-dom": ">=0.14.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.3.2",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-dev-server": "^2.2.0",
+    "webpack-hot-middleware": "^2.4.1"
+  },
+  "dependencies": {
+    "css-color-function": "^1.3.3",
+    "lodash": "^4.17.5",
+    "styled-components": "^3.2.5"
+  }
+}
