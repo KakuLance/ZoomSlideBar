@@ -33,7 +33,7 @@ describe('Initialise ZoomSlideBar', () => {
   })
 
   it('Initialise ZoomSlideBar state after mount', () => {
-    const slideBar = Enzyme.shallow(
+    const slideBar = Enzyme.mount(
       <ZoomSlideBar
         Low={low}
         High={high}

@@ -103,7 +103,7 @@ class ZoomSlideBar extends Component {
     const startKey = Vertical ? 'top' : 'left'
     const clickKey = Vertical ? 'clientY' : 'clientX'
 
-    const slider = this.refs.slider
+    const slider = this.slider
     const sliderStart = slider.getBoundingClientRect()[startKey]
 
     const mousePos = eventType === 'mouse' ? e[clickKey] : e.touches[0][clickKey]
@@ -168,7 +168,7 @@ class ZoomSlideBar extends Component {
     const startKey = Vertical ? 'top' : 'left'
     const clickKey = Vertical ? 'clientY' : 'clientX'
 
-    const slider = this.refs.slider
+    const slider = this.slider
     const sliderStart = slider.getBoundingClientRect()[startKey]
 
     const mousePos = eventType === 'mouse' ? e[clickKey] : e.touches[0][clickKey]
@@ -341,7 +341,7 @@ class ZoomSlideBar extends Component {
     const startKey = Vertical ? 'top' : 'left'
     const rangeKey = Vertical ? 'offsetHeight' : 'offsetWidth'
 
-    const slider = this.refs.slider
+    const slider = this.slider
     const sliderLength = !slider ? 0 : slider[rangeKey]
     const sliderStart = !slider ? 0 : slider.getBoundingClientRect()[startKey]
 
@@ -409,7 +409,7 @@ class ZoomSlideBar extends Component {
         ) }
 
         <Dot
-          innerRef={(comp) => this.refs[posKey] = comp}
+          innerRef={(comp) => this[posKey] = comp}
           onMouseDown={(e) => this.handleStartDragging(e, posKey, 'mouse')}
           onTouchStart={(e) => this.handleStartDragging(e, posKey, 'touch')}
           vertical={Vertical}
@@ -431,7 +431,7 @@ class ZoomSlideBar extends Component {
 
     return (
       <PosBar
-        innerRef={(comp) => this.refs.PosBar = comp}
+        innerRef={(comp) => this.PosBar = comp}
         onMouseDown={(e) => this.handleStartDraggingPosBar(e, 'mouse')}
         onTouchStart={(e) => this.handleStartDraggingPosBar(e, 'touch')}
         vertical={Vertical}
@@ -447,7 +447,7 @@ class ZoomSlideBar extends Component {
       <Root>
 
         <Bar
-          innerRef={(comp) => this.refs.slider = comp}
+          innerRef={(comp) => this.slider = comp}
           vertical={this.props.Vertical}>
           {this.renderDot('Low')}
 
