@@ -1,8 +1,8 @@
 import jsdom from 'jsdom'
-import 'babel-polyfill'
+import 'raf/polyfill'
 
 const { JSDOM } = jsdom
-const documentHTML = '<!doctype html><html><body><div id="react-root"></div></body></html>'
+const documentHTML = '<!doctype html><html><body></body></html>'
 const { document } = (new JSDOM(documentHTML)).window
 global.document = document
 global.window = document.defaultView
