@@ -46,7 +46,11 @@ describe('A ZoomSlideBar with only required props should', () => {
 
   afterEach(() => {
     rootDiv.remove()
-  });
+  })
+
+  it('matches snapshot', () => {
+    expect(slideBar).toMatchSnapshot()
+  })
 
   it('requires all necessary props', () => {
     expect(slideBar.props().Low).toBeDefined()

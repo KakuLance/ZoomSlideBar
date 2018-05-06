@@ -15,7 +15,10 @@
     "setupFiles": [
       "<rootDir>/test/setupFile.js"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/test/setupTest.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/test/setupTest.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "keywords": [
     "component",

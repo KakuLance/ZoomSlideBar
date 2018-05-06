@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`A ZoomSlideBar with only required props should matches snapshot 1`] = `
+.c0 {
+  position: absolute;
+  top: 0px;
+  right: 14px;
+  left: 14px;
+}
+
+.c1 {
+  opacity: 0.3;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #8B949C;
+  background: #8B949C;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  bottom: 0;
+  right: NaN%;
+}
+
+.c3 {
+  opacity: 0.3;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #8B949C;
+  background: #8B949C;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  bottom: 0;
+  left: NaN%;
+}
+
+.c2 {
+  opacity: 0.3;
+  background: #CDCDD5;
+  cursor: pointer;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  position: absolute;
+  height: 8px;
+  bottom: 0;
+  left: NaN%;
+  right: NaN%;
+}
+
+<ZoomSlideBar
+  BackUnit=""
+  Decimal={0}
+  DisplayLabel={false}
+  High={100}
+  Low={0}
+  Max={100}
+  Min={0}
+  Step={1}
+  Vertical={false}
+  onChangeHigh={[MockFunction]}
+  onChangeLow={[MockFunction]}
+  onChangePos={[MockFunction]}
+>
+  <style__Root>
+    <div
+      className=""
+    >
+      <style__Bar
+        innerRef={[Function]}
+        vertical={false}
+      >
+        <div
+          className="c0"
+        >
+          <div>
+            <style__Dot
+              innerRef={[Function]}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              posStyle="right: NaN%;"
+              vertical={false}
+            >
+              <div
+                className="c1"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </style__Dot>
+          </div>
+          <style__PosBar
+            innerRef={[Function]}
+            onMouseDown={[Function]}
+            onTouchStart={[Function]}
+            posStyle="
+          left: NaN%;
+          right: NaN%;
+        "
+            vertical={false}
+          >
+            <div
+              className="c2"
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+            />
+          </style__PosBar>
+          <div>
+            <style__Dot
+              innerRef={[Function]}
+              onMouseDown={[Function]}
+              onTouchStart={[Function]}
+              posStyle="left: NaN%;"
+              vertical={false}
+            >
+              <div
+                className="c3"
+                onMouseDown={[Function]}
+                onTouchStart={[Function]}
+              />
+            </style__Dot>
+          </div>
+        </div>
+      </style__Bar>
+    </div>
+  </style__Root>
+</ZoomSlideBar>
+`;
